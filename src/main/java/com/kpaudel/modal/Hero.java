@@ -2,6 +2,7 @@ package com.kpaudel.modal;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -16,10 +17,15 @@ public class Hero implements Serializable {
 	private static final long serialVersionUID = -7478286910761048802L;
 	@Id
 	private Integer id;
+	@Column(nullable = false, length = 1000)
 	private String name;
+	@Column(nullable = false, length = 1000)
 	private String realName;
+	@Column
 	private int health;
+	@Column
 	private int armour;
+	@Column
 	private int shield;
 
 	/**

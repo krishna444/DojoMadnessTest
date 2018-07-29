@@ -72,6 +72,7 @@ public class RESTConsumerService {
 				Hero hero = new Hero();
 				hero.setId(heroJSON.getInt("id"));
 				hero.setName(heroJSON.getString("name"));
+				hero.setRealName(heroJSON.getString("real_name"));
 				hero.setHealth(heroJSON.getInt("health"));
 				hero.setArmour(heroJSON.getInt("armour"));
 				hero.setShield(heroJSON.getInt("shield"));

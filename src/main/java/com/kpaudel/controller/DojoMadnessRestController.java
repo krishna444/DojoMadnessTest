@@ -15,6 +15,11 @@ import com.kpaudel.modal.Hero;
 import com.kpaudel.repository.AbilityRepository;
 import com.kpaudel.repository.HeroRepository;
 
+/**
+ * REST control for end points
+ * @author krishna
+ *
+ */
 @CrossOrigin
 @RestController
 @RequestMapping("/api")
@@ -23,7 +28,7 @@ public class DojoMadnessRestController {
 	private AbilityRepository abilityRepository;
 	@Autowired
 	private HeroRepository heroRepository;
-
+	
 	@ResponseBody
 	@RequestMapping(value = "/heros")
 	public List<Hero> getHeros() {
